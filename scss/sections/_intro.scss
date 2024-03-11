@@ -1,0 +1,239 @@
+#intro {
+  padding-top: 200px;
+
+  .wrapper {
+    display: flex;
+    gap: 100px;
+    align-items: start;
+    margin-bottom: 200px;
+
+    &__left {
+      max-width: 563px;
+    
+
+      h1 {
+        font-size: 54px;
+        color: #fff;
+      }
+
+      p {
+        font-size: 22px;
+        color: #fff;
+        margin-bottom: 48px;
+      }
+
+      button {
+        @extend %btnPrimary;
+        padding: 18px 36px;
+      }
+    }
+
+    &__right {
+      flex-grow: 2;
+
+      position: relative;
+      background-image: url("../../assets/images/cicle.svg");
+      width: 500px;
+      height: 500px;
+      background-repeat: no-repeat;
+      background-position: center;
+
+      img {
+        position: absolute;
+
+        @keyframes lolo{
+          0%{
+            transform: translateY(0);
+          }
+          100%{
+            transform: translateY(-50px);
+          }
+        }
+        &:nth-child(1) {
+          top: -40px;
+          left: 44px;
+          animation: lolo 5s linear infinite alternate both;
+
+        }
+
+        &:nth-child(2) {
+          bottom: -100px;
+          left: -76px;
+          animation: lolo 2s linear 2s infinite alternate both;
+        }
+
+        &:nth-child(3) {
+          top: -55px;
+          right: 40px;
+          animation: lolo 2s linear infinite alternate both;
+        }
+
+        &:nth-child(4) {
+          bottom: -20px;
+          right: 40px;
+          animation: lolo 5s linear 2s infinite alternate both;
+        }
+      }
+   
+      .botp{
+        position: absolute;
+        top: 150px;
+        right: -40px !important;
+      }
+      .imps{
+        position: absolute;
+        margin-left: 130px;
+      }
+    }
+  }
+}
+
+#logo{
+   .logo__wrapper{
+     width: 100%;
+     padding: 250px 0;
+     color: #fff;
+     margin: 0 auto;
+
+     &__titl{
+       text-align: center;
+
+       h2{
+         font-size: 48px;
+         font-weight: 800;
+       }
+       p{
+        font-size: 18px;
+        font-weight: 400;
+        margin-top: 10px;
+       }
+     }
+
+     .logo__wrapper__card{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        padding-top: 100px;
+
+        .cards{
+
+           div{
+              width: 160px;
+              height: 100px;
+              background-color: #fff;
+              border-radius: 16px;
+              margin-bottom: 20px;
+              display: grid;
+              place-content: center;
+              box-shadow: 0 20px 35px rgba(166, 165, 165, 0.507);
+           }
+        }
+        
+     }
+   }
+}
+
+#anmeshin .anmeshin__wrapper{
+   width: 100%;
+   padding: 200px 0;
+   display: flex;
+   justify-content: space-between;
+
+   .anmeshin__wrapper__card{
+      div{
+        width: 265px;
+        height: 265px;
+        border-radius: 50%;
+        background-color: #291C52;
+        display: grid;
+        place-content: center;
+        img{
+          width: 182px;
+          height: 182px;
+          animation: look 5s ease infinite;
+         }
+      }
+
+      @keyframes look {
+        0%{
+            transform: scale(0);
+        }
+        50%{
+           transform: scale(1.2);
+        }
+        100%{
+           transform: scale(0);
+        }
+      }
+   }
+
+ 
+   .anmeshin__wrapper__carta{
+     
+    div{
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background-color:#291C52;
+      margin: 4px 0 30px 500px;
+      display: grid;
+      place-content: center;
+      img{
+        width: 125px;
+        height: 125px;
+        animation: name 2s linear infinite;
+      }
+
+      @keyframes name {
+         0%{
+           transform: scale(0);
+         }
+         100%{
+          transform: scale(1);
+          margin-top: -50px;
+        }
+          0% {
+          transform: rotateZ(0);
+        }
+        15% {
+          transform: rotateZ(-15deg);
+        }
+        20% {
+          transform: rotateZ(10deg);
+        }
+        25% {
+          transform: rotateZ(-10deg);
+        }
+        30% {
+          transform: rotateZ(6deg);
+        }
+        35% {
+          transform: rotateZ(-4deg);
+        }
+         100% {
+          transform: rotateZ(0);
+        }
+        
+      }
+      
+      img {
+        
+        border: none;
+        color: #fff;
+        font-family: Helvetica, Arial, Sans-serif;
+        transform-origin: 50% 5em;
+      }
+}
+    }
+     h2{
+       font-size:48px;
+       font-weight: 700;
+       line-height: 80px;
+       color: #fff;
+     }
+     samp{
+        color: rgb(142, 82, 133);
+     }
+   }
+  
